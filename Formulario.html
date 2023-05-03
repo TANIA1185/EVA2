@@ -1,0 +1,101 @@
+<!-- TANIA FARIAS 16.648.778-1 TI2031 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"> <!-- se utiliza para indicar al navegador web qué codificación de caracteres se está utilizando en la página web -->
+    <title>Registro de Clientes</title> <!-- Título de la página -->
+    <link href="style.css" rel="stylesheet" type="text/css"> <!-- Vinculación del archivo CSS para los estilos -->
+  </head>
+  <body>
+    <div class="container"> <!-- Contenedor principal -->
+		<h1><img src="logo.jpg" alt="Imagen de la empresa" class="logo">"TECNOLOGIA A TU BOLSILLO"</h1> <!-- Título principal -->
+		<ul> <!-- Lista de navegación -->
+			<li><a href="Pagina_Principal.html">Inicio</a></li>
+            <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+			<li><a href="servicio.html">Servicios</a></li>
+			<li><a href="productos.html">Productos</a></li>
+            <li><a href="carro_compra.html">Carrito de compras</a></li>
+			<li><a href="Contacto.html">Contacto</a></li>
+			<li><a href="login.html">login</a></li>
+		</ul>
+    <br>
+    <br>
+    <header>
+      <h3>Registro de Clientes</h3> <!-- Título principal de la página -->
+    </header>
+ 
+    <main>
+        
+      <form action="#" method="post"> <!-- Formulario de registro con método POST -->
+        <h2>Datos personales</h2> <!-- Título de la sección de datos personales -->
+        <div>
+          <label for="nombre">Nombre:</label> <!-- Etiqueta de texto para el campo de nombre -->
+          <input type="text" id="nombre" name="nombre" required> <!-- Campo de entrada de texto para el nombre -->
+        </div>
+        <div>
+          <label for="apellido">Apellido:</label> <!-- Etiqueta de texto para el campo de apellido -->
+          <input type="text" id="apellido" name="apellido" required> <!-- Campo de entrada de texto para el apellido -->
+        </div>
+        <div>
+          <label for="email">Correo electrónico:</label> <!-- Etiqueta de texto para el campo de correo electrónico -->
+          <input type="email" id="email" name="email" required> <!-- Campo de entrada de texto para el correo electrónico -->
+        </div>
+        <div>
+          <label for="telefono">Teléfono:</label> <!-- Etiqueta de texto para el campo de teléfono -->
+          <input type="tel" id="telefono" name="telefono"> <!-- Campo de entrada de texto para el teléfono -->
+        </div>
+        <h2>Datos de dirección</h2> <!-- Título de la sección de datos de dirección -->
+        <div>
+          <label for="direccion">Dirección:</label> <!-- Etiqueta de texto para el campo de dirección -->
+          <textarea id="direccion" name="direccion" rows="4" cols="50"></textarea> <!-- Campo de entrada de texto de varias líneas para la dirección -->
+        </div>
+        <div>
+          <label for="ciudad">Ciudad:</label> <!-- Etiqueta de texto para el campo de ciudad -->
+          <input type="text" id="ciudad" name="ciudad"> <!-- Campo de entrada de texto para la ciudad -->
+        </div>
+        <div>
+        <label for="comuna">Selecciona tu comuna:</label>
+            <select id="comuna" name="comuna">
+            <option value="0">Seleccione comuna</option>
+            <option value="1">Santiago</option>
+            <option value="2">Valparaíso</option>
+            <option value="3">Concepción</option>
+            <option value="4">Viña del Mar</option>
+            <option value="5">La Serena</option>
+            </select>
+        </div>
+        <br>
+        <div>
+          <label for="estado">Estado:</label> <!-- Etiqueta de texto para el campo de estado -->
+          <input type="text" id="estado" name="estado"> <!-- Campo de entrada de texto para el estado -->
+        </div>
+        <div>
+          <label for="codigo-postal">Código postal:</label> <!-- Etiqueta de texto para el campo de código postal -->
+          <input type="text" id="codigo-postal" name="codigo-postal"> <!-- Campo de entrada de texto para el código postal -->
+        </div>
+        <div>
+            <!-- Crea un contenedor para un grupo de elementos de formulario -->
+            <label for="country-select">Selecciona un país:</label>
+                <select id="country-select">
+                    <option value="Seleccionar pais">Selecciona pais</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="chile">Chile</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="mexico">México</option>
+                    <option value="peru">Perú</option>
+                    <option value="españa">España</option>
+                    <option value="eeuu">Estados Unidos</option>
+                </select>
+            <!-- Crea un campo de entrada de texto para el país-->
+          </div>
+          <br>
+          <input type="submit" value="Registrate">
+          <!-- Crea un botón de envío para enviar el formulario -->
+        </form>
+    </main>
+    <footer>
+        <p>Derechos Reservados © 2023</p>
+    </footer>
+  </body>
+</html>

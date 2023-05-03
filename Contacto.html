@@ -1,0 +1,47 @@
+<!-- TANIA FARIAS 16.648.778-1 TI2031 -->
+<!DOCTYPE html> <!-- Indica el tipo de documento -->
+<html> <!-- Inicio del documento -->
+<head> <!-- Encabezado del documento -->
+    <meta charset="UTF-8"> <!-- se utiliza para indicar al navegador web qué codificación de caracteres se está utilizando en la página web -->
+	<title>Contacto</title> <!-- Título de la página -->
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- Enlace al archivo de estilos -->
+</head>
+<body> <!-- Cuerpo del documento -->
+    <div class="container"> <!-- Contenedor principal -->
+		<h1><img src="logo.jpg" alt="Imagen de la empresa" class="logo">"TECNOLOGIA A TU BOLSILLO"</h1> <!-- Título principal -->
+		<ul> <!-- Lista de navegación -->
+			<li><a href="Pagina_Principal.html">Inicio</a></li>
+			<li><a href="quienes_somos.html">Quiénes Somos</a></li>
+			<li><a href="servicio.html">Servicios</a></li>
+			<li><a href="productos.html">Productos</a></li>
+            <li><a href="carro_compra.html">Carrito de compras</a></li>
+			<li><a href="Contacto.html">Contacto</a></li>
+			<li><a href="login.html">login</a></li>
+		</ul>
+	<div class="container">
+		<h1>Contacto</h1> <!-- Título de la sección de contacto -->
+		<form> <!-- Formulario de contacto -->
+			<div> <!-- Grupo de campos para el nombre -->
+				<label for="nombre">Nombre:</label> <!-- Etiqueta para el campo de nombre -->
+				<input type="text" id="nombre" name="nombre" required> <!-- Campo de nombre -->
+			</div>
+			<div> <!-- Grupo de campos para el email -->
+				<label for="email">Email:</label> <!-- Etiqueta para el campo de email -->
+				<input type="email" id="email" name="email" required> <!-- Campo de email -->
+			</div>
+			<div> <!-- Grupo de campos para el teléfono -->
+				<label for="telefono">Teléfono:</label> <!-- Etiqueta para el campo de teléfono -->
+				<input type="tel" id="telefono" name="telefono" required> <!-- Campo de teléfono -->
+			</div>
+			<div> <!-- Grupo de campos para el mensaje -->
+				<label for="mensaje">Mensaje:</label> <!-- Etiqueta para el campo de mensaje -->
+				<textarea id="mensaje" name="mensaje" required></textarea> <!-- Campo de mensaje -->
+			</div>
+			<input type="submit" value="Enviar"> <!-- Botón para enviar el formulario -->
+		</form>
+	</div>
+    <footer>
+        <p>Derechos Reservados © 2023</p>
+    </footer>
+</body>
+</html>

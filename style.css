@@ -1,0 +1,161 @@
+
+
+/* Estilos generales */
+* {
+	box-sizing: border-box; /* Incluye los bordes en el cálculo del tamaño de un elemento */
+	margin: 0; /* Quita los márgenes predeterminados del navegador */
+	padding: 0; /* Quita los rellenos predeterminados del navegador */
+}
+
+body {
+	font-family: Arial, sans-serif; /* Establece la fuente y la familia de fuente para el cuerpo del documento */
+	font-size: 16px; /* Establece el tamaño de fuente base para el cuerpo del documento */
+	line-height: 1.5; /* Establece la altura de línea para el cuerpo del documento */
+	color: #333; /* Establece el color de fuente para el cuerpo del documento */
+	background-color: #f2f2f2; /* Establece el color de fondo para el cuerpo del documento */
+}
+
+.container {
+	max-width: 1200px; /* Establece el ancho máximo para el contenedor principal */
+	margin: 0 auto; /* Centra el contenedor principal en la página */
+	padding: 20px; /* Establece un relleno interno para el contenedor principal */
+}
+
+h1, h2, h3 {
+	margin-bottom: 20px; /* Establece el margen inferior para los títulos h1 y h2 */
+	text-align: center; /* Centra los títulos h1 y h2 */
+	color: #1E90FF; /* Establece el color de fuente para los títulos h1 y h2 */
+}
+
+ul {
+	list-style: none; /* Quita las viñetas predeterminadas de las listas desordenadas */
+	display: flex; /* Establece la presentación de la lista desordenada como una flexbox */
+	justify-content: space-between; /* Distribuye uniformemente los elementos de la lista desordenada a lo largo del eje principal */
+	align-items: center; /* Centra verticalmente los elementos de la lista desordenada */
+	background-color: #1E90FF; /* Establece el color de fondo para la lista desordenada */
+	padding: 10px; /* Establece un relleno interno para la lista desordenada */
+	border-radius: 10px; /* Establece el radio de la esquina para la lista desordenada */
+}
+
+ul li {
+	margin-right: 10px; /* Establece el margen derecho para cada elemento de la lista desordenada */
+	font-weight: bold; /* Establece el peso de fuente para cada elemento de la lista desordenada */
+	color: #fff; /* Establece el color de fuente para cada elemento de la lista desordenada */
+}
+
+table {
+	width: 100%; /* Establece el ancho de la tabla al 100% del ancho del contenedor */
+	margin-top: 20px; /* Establece el margen superior para la tabla */
+	border-collapse: collapse; /* Combina los bordes de las celdas adyacentes en una sola línea */
+}
+
+thead {
+	background-color: #1E90FF; /* Establece el color de fondo para la fila de encabezado de la tabla */
+	color: #fff; /* Establece el color de fuente para la fila de encabezado de la tabla */
+}
+
+th, td {
+	padding: 10px; /* Establece el relleno interno para las celdas de la tabla */
+	text-align: left; /* Establece la alineación del texto */
+}
+/* Establece que el color de fondo de cada fila par en la tabla sea gris claro */
+tbody tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+/* Establece los estilos para los formularios en la página */
+form {
+	margin-top: 20px; /* Establece la distancia entre la parte superior del formulario y el elemento anterior */
+	background-color: #fff; /* Establece el color de fondo del formulario */
+	padding: 20px; /* Establece el espacio de relleno alrededor de los elementos en el formulario */
+	border-radius: 10px; /* Establece la cantidad de curvatura en las esquinas del borde del formulario */
+}
+
+/* Establece los estilos para las etiquetas en el formulario */
+label {
+	display: block; /* Hace que cada etiqueta sea un bloque separado */
+	margin-bottom: 10px; /* Establece la distancia entre cada etiqueta y el elemento anterior */
+	color: #1E90FF; /* Establece el color del texto de las etiquetas */
+}
+
+/* Establece los estilos para los campos de entrada de texto, correo electrónico, teléfono y botones de envío en el formulario */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"] {
+	display: block; /* Hace que cada campo de entrada sea un bloque separado */
+	margin-bottom: 10px; /* Establece la distancia entre cada campo de entrada y el elemento anterior */
+	/* A continuación se establecen algunos estilos adicionales para cada tipo de campo */
+}
+
+/* Estilos CSS */
+/* Definición de la cuadrícula */
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header"
+        "image text"
+        "footer footer";
+    grid-gap: 20px;
+    padding: 20px;
+}
+/* Estilos para la cabecera */
+header {
+    grid-area: header;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+/* Estilos para la imagen */
+.qsm  {
+    grid-area: image;
+    max-width: 90%;
+    height: auto;
+}
+/* Estilos para el texto */
+.text1 {
+    grid-area: text;
+    text-align: justify;
+}
+/* Estilos para el pie de página */
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+/* Estilos para la imagen del logo */
+.logo {
+    width: 10%;
+    height: auto;
+}
+
+/* pagina productos*/
+
+.b {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+}
+
+.h {
+	text-align: center;
+	margin-top: 30px;
+}
+
+/* Estilos de la cuadrícula */
+.grid-container {
+	display: grid; /* Establece el elemento como una cuadrícula */
+	grid-template-columns: repeat(3, 1fr); /* Define tres columnas de igual tamaño */
+	grid-gap: 20px; /* Define el espacio entre los elementos de la cuadrícula */
+	margin: 30px;
+}
+
+.grid-item {
+	background-color: #ffffff;
+	padding: 20px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra a cada elemento */
+	text-align: center;
+}
+
